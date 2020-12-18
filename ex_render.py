@@ -10,7 +10,7 @@ import math
 import sys
 
 device = fresnel.Device(mode='cpu');
-preview_tracer = fresnel.tracer.Preview(device, 300, 300, aa_level=3)
+preview_tracer = fresnel.tracer.Preview(device, 300, 300)
 path_tracer = fresnel.tracer.Path(device, 300, 300)
 
 blue = fresnel.color.linear([0.25,0.5,1])*0.9;
